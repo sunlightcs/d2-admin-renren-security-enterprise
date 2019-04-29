@@ -183,6 +183,9 @@
         .el-menu-item {
           color: $theme-aside-item-color;
           background: $theme-aside-item-background-color;
+          svg {
+            fill: $theme-aside-item-color;
+          }
           i {
             color: $theme-aside-item-color;
           }
@@ -190,6 +193,9 @@
             color: $theme-aside-item-color-hover;
             fill: $theme-aside-item-color-hover;
             background: $theme-aside-item-background-color-hover;
+            svg {
+              fill: $theme-aside-item-color-hover;
+            }
             i {
               color: $theme-aside-item-color-hover;
             }
@@ -198,6 +204,9 @@
             color: $theme-aside-item-color-focus;
             fill: $theme-aside-item-color-focus;
             background: $theme-aside-item-background-color-focus;
+            svg {
+              fill: $theme-aside-item-color-focus;
+            }
             i {
               color: $theme-aside-item-color-focus;
             }
@@ -206,6 +215,9 @@
             color: $theme-aside-item-color-active;
             fill: $theme-aside-item-color-active;
             background: $theme-aside-item-background-color-active;
+            svg {
+              fill: $theme-aside-item-color-active;
+            }
             i {
               color: $theme-aside-item-color-active;
             }
@@ -216,6 +228,9 @@
         .el-submenu__title {
           color: $theme-aside-item-color;
           background: $theme-aside-item-background-color;
+          svg {
+            fill: $theme-aside-item-color;
+          }
           i {
             color: $theme-aside-item-color;
           }
@@ -225,6 +240,9 @@
           &:hover {
             color: $theme-aside-item-color-hover;
             background: $theme-aside-item-background-color-hover;
+            svg {
+              fill: $theme-aside-item-color-hover;
+            }
             i {
               color: $theme-aside-item-color-hover;
             }
