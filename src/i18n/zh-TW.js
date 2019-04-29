@@ -59,7 +59,10 @@ t.theme.d2 = 'D2Admin 經典'
 t.theme.violet = '紫羅蘭'
 t.theme.line = '簡約線條'
 t.theme.star = '流星'
-t.theme.tomorrowNightBlue = 'Tomorrow Night Blue (vsCode)'
+t.theme.tomorrowNightBlue = 'Tomorrow Night Blue'
+t.theme.list = {}
+t.theme.list.button = '啟動'
+t.theme.list.buttonActive = '已啟動'
 
 t.layout = {}
 t.layout.hello = '你好'

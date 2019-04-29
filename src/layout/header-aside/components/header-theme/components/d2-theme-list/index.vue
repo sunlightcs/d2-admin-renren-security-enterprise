@@ -5,10 +5,8 @@
     v-bind="table">
     <el-table-column
       prop="title"
-      align="center"
-      width="160"/>
+      align="center"/>
     <el-table-column
-      label="预览"
       width="120">
       <div
         slot-scope="scope"
@@ -20,20 +18,21 @@
     </el-table-column>
     <el-table-column
       prop="address"
-      align="center">
+      align="center"
+      width="200">
       <template slot-scope="scope">
         <el-button
           v-if="activeName === scope.row.name"
           type="success"
           icon="el-icon-check"
           round>
-          已激活
+          {{$t('theme.list.buttonActive')}}
         </el-button>
         <el-button
           v-else
           round
           @click="handleSelectTheme(scope.row.name)">
-          使用
+          {{$t('theme.list.button')}}
         </el-button>
       </template>
     </el-table-column>

@@ -59,7 +59,10 @@ t.theme.d2 = 'D2Admin Classic'
 t.theme.violet = 'Violet'
 t.theme.line = 'Line'
 t.theme.star = 'Star'
-t.theme.tomorrowNightBlue = 'Tomorrow Night Blue (vsCode)'
+t.theme.tomorrowNightBlue = 'Tomorrow Night Blue'
+t.theme.list = {}
+t.theme.list.button = 'Select'
+t.theme.list.buttonActive = 'Activated'
 
 t.layout = {}
 t.layout.hello = 'Hello'

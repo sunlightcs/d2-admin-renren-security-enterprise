@@ -59,7 +59,10 @@ t.theme.d2 = 'D2Admin 经典'
 t.theme.violet = '紫罗兰'
 t.theme.line = '简约线条'
 t.theme.star = '繁星'
-t.theme.tomorrowNightBlue = 'Tomorrow Night Blue (vsCode)'
+t.theme.tomorrowNightBlue = 'Tomorrow Night Blue'
+t.theme.list = {}
+t.theme.list.button = '使用'
+t.theme.list.buttonActive = '已激活'
 
 t.layout = {}
 t.layout.hello = '你好'
