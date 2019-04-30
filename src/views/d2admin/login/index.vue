@@ -228,6 +228,8 @@ export default {
       padding: 0px 14px;
     }
     .login-captcha {
+      // https://github.com/d2-projects/d2-admin-renren-security-enterprise/issues/5
+      background-image: linear-gradient(90deg, #C7C7C7 0%, #F9F9F9 100%);
       height: 40px - 2px;
       width: 126px;
       background-size: cover;
