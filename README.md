@@ -34,6 +34,8 @@
 
 ## 介绍
 
+**本项目中不少代码是来自人人开源的原版前端产品，此项目的意义是展示如何将人人的前端与 D2Admin 结合。**
+
 🚌 功能：
 
 * [x] 登陆 / 注销
@@ -63,7 +65,14 @@
 
 ## 奖励
 
-我坚决不会像某些开源项目一样走 👎 收费 or 👎 部分收费 or 👎 文档收费 or 👎 交流群收费 路线。作为一名一线开发者，业余开源没有资金回报，请尽量资助作者继续相关项目开发以及 CDN / https / 日常运营 费用。感谢 🤝。
+D2Admin 不会像某些开源项目一样走收费路线。作为一名一线开发者，业余开源没有资金回报，请尽量资助作者继续相关项目开发以及 CDN / https / 日常运营 费用。感谢 🤝。
+
+鉴于有人喷我，更正一下：
+
+* 有足够原创性和特色的项目我支持付费购买，例 [pixinvent.com](https://pixinvent.com/)，我所指的是一些粗制滥造大量模仿和搬运的产品
+* D2Admin 没有任何强制收费
+* D2Admin 目前还**不值得收费**，目前也远没有达到我认为可以收费的水平
+* 为了避免其他人误解我抄袭，很早以前我做了这个页面 [借鉴 D2Admin 的项目](https://doc.d2admin.fairyever.com/zh/plagiarize/)
 
 ![join](https://raw.githubusercontent.com/d2-projects/d2-admin/master/doc/image/reward-me@2x.png)
 
