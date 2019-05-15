@@ -396,6 +396,16 @@ export default {
       }
       push(routes)
       state.pool = pool
+    },
+    /**
+     * @class pool
+     * @description 在 pool (候选池) 中追加数据
+     * @param {Object} state vuex state
+     * @param {Array} routes routes
+     */
+    push (state, route) {
+      const { meta, name, path } = route
+      state.pool.push({ meta, name, path })
     }
   }
 }

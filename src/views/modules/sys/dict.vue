@@ -64,6 +64,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import mixinViewModule from '@/mixins/view-module'
 import AddOrUpdate from './dict-add-or-update'
 import { moduleRoutes } from '@/router'
@@ -88,17 +89,23 @@ export default {
   components: {
     AddOrUpdate
   },
-  activated () {
-    // 通过路由参数pid, 控制列表请求操作
-    this.dataForm.pid = this.$route.params.pid || '0'
-    if (this.dataForm.pid !== '0') {
-      this.mixinViewModuleOptions.getDataListURL = '/sys/dict/list'
-      this.mixinViewModuleOptions.getDataListIsPage = false
-      this.dataForm.dictType = this.$route.params.type || ''
+  watch: {
+    $route ($route) {
+      // 通过路由参数pid, 控制列表请求操作
+      this.dataForm.pid = $route.params.pid || '0'
+      if (this.dataForm.pid !== '0') {
+        this.mixinViewModuleOptions.getDataListURL = '/sys/dict/list'
+        this.mixinViewModuleOptions.getDataListIsPage = false
+        this.dataForm.dictType = $route.params.type || ''
+      }
+      this.dataList = []
+      this.getDataList()
     }
-    this.getDataList()
   },
   methods: {
+    ...mapMutations('d2admin/page', {
+      d2adminPagePoolPush: 'push'
+    }),
     // 子级
     childHandle (row) {
       // 组装路由名称, 并判断是否已添加, 如是: 则直接跳转
@@ -126,6 +133,7 @@ export default {
         }
       ])
       window.SITE_CONFIG['dynamicRoutes'].push(route)
+      this.d2adminPagePoolPush(route)
       this.$router.push({ name: route.name, params: { 'pid': row.id, 'type': row.dictType } })
     },
     // 新增 / 修改
