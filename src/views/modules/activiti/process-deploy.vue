@@ -1,5 +1,6 @@
 <template>
   <el-dialog :visible.sync="visible" :title="$t('process.deployFile')" :close-on-click-modal="false" :close-on-press-escape="false">
+    <!-- https://github.com/d2-projects/d2-admin-renren-security-enterprise/issues/8 -->
     <el-upload
       name="processFile"
       :action="url"
@@ -7,7 +8,7 @@
       drag
       :before-upload="beforeUploadHandle"
       :on-success="successHandle"
-      class="text-center">
+      class="d2-text-center">
       <i class="el-icon-upload"/>
       <div class="el-upload__text" v-html="$t('upload.text')"/>
       <div class="el-upload__tip" slot="tip">{{ $t('upload.tip', { 'format': 'zip、xml、bar、bpmn' }) }}</div>
